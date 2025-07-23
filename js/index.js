@@ -7,6 +7,8 @@ function getPostHTML(position,post){
             <div class="col">
                 <div class="card text-center">
                     <div class="card-header">
+                        <img src="`+post.image+`" class="post-img">
+                        <br><br>
                         `+post.title+`
                     </div>
                     <div class="card-body">
