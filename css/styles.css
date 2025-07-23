@@ -1,0 +1,12 @@
+body{
+    background: #cdcdcd;
+}
+
+.card-header{
+    font-weight: bold;
+}
+
+.btn{
+    font-weight: bold;
+    min-width: 200px;
+}
