@@ -1,0 +1,8 @@
+I plan to use JavaScript within each page to perform CRUD operations.
+
+new-post.html - Create
+index.html - Read
+post.html - Update / Delete
+
+I will use the local storage API to save everything locally.
+The Bootstrap library will also be added to help with the user interface.
