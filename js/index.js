@@ -1,7 +1,7 @@
 const listContainer = document.getElementById("post-list");
 let posts = new Posts();
 
-function getPostHTML(position,post){
+function getPostHTML(postID,post){
     let html = `
         <div class="row mb-4 mt-4">
             <div class="col">
@@ -15,7 +15,7 @@ function getPostHTML(position,post){
                         <p class="card-text">`+post.summary+`</p>
                     </div>
                     <div class="card-footer text-body-secondary">
-                        <a href="#" class="btn btn-primary">View</a>
+                        <a href="post.html?postID=`+postID+`" class="btn btn-primary">View</a>
                     </div>
                 </div>
             </div>

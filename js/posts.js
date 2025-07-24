@@ -61,6 +61,18 @@ class Posts {
         localStorage.setItem(this.#postKey,JSON.stringify(this.#posts));
     }
 
+    updatePost(postID,imageBase64,title,summary,content){
+        let post = {
+            image:imageBase64,
+            title:title,
+            summary:summary,
+            content:content
+        };
+
+        this.#posts[postID] = post;
+        localStorage.setItem(this.#postKey,JSON.stringify(this.#posts));
+    }
+
     getPosts(){
         return this.#posts;
     }
