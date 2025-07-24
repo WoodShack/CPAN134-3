@@ -18,7 +18,7 @@ body{
 
 .btn{
     font-weight: bold;
-    min-width: 200px;
+    min-width: 180px;
 }
 
 #post-form-container{
@@ -54,6 +54,7 @@ body{
     margin-top: 20px;
     display: flex;
     justify-content: center;
+    column-gap: 10px;
 }
 
 .error-container{
