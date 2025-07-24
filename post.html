@@ -3,11 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Post</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <script defer src="js/bootstrap.bundle.min.js"></script>
+    <script defer src="js/posts.js"></script>
+    <script defer src="js/post.js"></script>
 </head>
 <body>
-    
+
+    <div class="btn-container">
+        <a href="index.html" class="btn btn-secondary">Home</a>
+    </div>
+
+    <div class="error-container">
+        <div id="error-alert" class="alert alert-danger" role="alert">
+            <b>There cannot be any empty fields.</b>
+        </div>
+    </div>
+
+    <div id="post-form-container">
+
+        <!-- Post form -->
+        <form id="post-form">
+            <div id="post-form-header">View Post</div>
+            <hr>
+            <div class="post-img-container">
+                <img id="post-img" class="img-fluid"/>
+            </div>
+            <br>
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" class="form-control" name="title" id="title" readonly>
+            </div>
+            <div class="mb-3">
+                <label for="summary" class="form-label">Summary</label>
+                <input type="text" class="form-control" name="summary" id="summary" readonly>
+            </div>
+            <div class="mb-3">
+                <label for="content" class="form-label">Content</label>
+                <textarea class="form-control" name="content" id="content" rows="6" readonly></textarea>
+            </div>
+
+            <div id="post-edit-container">
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="image">New Image</label>
+                    <input type="file" class="form-control" name="image" id="image" accept="image/*">
+                </div>
+                <button id="post-form-btn" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+
+    </div>
+
+    <div class="btn-container">
+        <button id="post-edit-btn" class="btn btn-primary">Edit</button>
+    </div>
+    <br>
+
 </body>
 </html>

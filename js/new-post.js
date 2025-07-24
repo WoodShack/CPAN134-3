@@ -1,4 +1,4 @@
-const form = document.getElementById("new-post-form");
+const form = document.getElementById("post-form");
 const errorAlert = document.getElementById("error-alert");
 const posts = new Posts();
 
