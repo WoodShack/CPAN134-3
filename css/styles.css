@@ -6,6 +6,19 @@ body{
     font-weight: bold;
 }
 
+#logo-img{
+    padding: 50px;
+}
+
+.nav{
+    margin: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #e1e1e1;
+    border: 3px solid #838383;
+    border-radius: 5px;
+}
+
 .post-img{
     max-height: 100px;
     height: auto;
@@ -27,6 +40,7 @@ body{
 }
 
 #post-form{
+    width: 600px;
     min-width: 400px;
     background: #e1e1e1;
     padding: 10px;
