@@ -14,6 +14,7 @@ const editContainer = document.getElementById("post-edit-container");
 const form = document.getElementById("post-form");
 const errorAlert = document.getElementById("error-alert");
 const formHeader = document.getElementById("post-form-header");
+const deleteBtn = document.getElementById("post-delete-btn");
 
 //On window load
 window.onload = function() {
@@ -39,6 +40,11 @@ function enterEditMode(){
 
 editBtn.addEventListener("click", function(event) {
     window.location.href = "post.html?postID="+postID+"&edit=1";
+});
+
+deleteBtn.addEventListener("click", function(event) {
+    posts.deletePost(postID);
+    window.location.href = "index.html";
 });
 
 //Convert image to base64

@@ -73,6 +73,11 @@ class Posts {
         localStorage.setItem(this.#postKey,JSON.stringify(this.#posts));
     }
 
+    deletePost(postID){
+        this.#posts.splice(postID,1);
+        localStorage.setItem(this.#postKey,JSON.stringify(this.#posts));
+    }
+
     getPosts(){
         return this.#posts;
     }
